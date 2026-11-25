@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAD | Medicamentos al alcance de tus manos</title>
+    <link rel="stylesheet" href="c:\Users\Randy\OneDrive\Desktop\stylesmad.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+       <div class="logo">
+    <img src="c:\Users\Randy\Downloads\madlogo.png" alt="Logo de MAD Farmacéutica">
+</div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#carrito">🛒 Carrito (<span id="contador">0</span>)</a>
+        </nav>
+    </header>
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+        <div class="inicio-contenido">
+            <h1>Bienvenido a MAD</h1>
+
+            <h2>Medicamentos al alcance de tus manos</h2>
+
+            <p>
+                Tu bienestar es nuestra prioridad.
+                Encuentra productos farmacéuticos y realiza
+                tus pedidos de manera fácil y rápida.
+            </p>
+
+            <a href="#productos" class="boton">Ver productos</a>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="seccion">
+        <h2>Nuestros productos</h2>
+
+        <input
+            type="text"
+            id="buscador"
+            placeholder="Buscar un producto..."
+        >
+
+        <div class="productos" id="lista-productos">
+
+            <!-- JavaScript mostrará los productos aquí -->
+
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="nosotros seccion">
+        <h2>¿Quiénes somos?</h2>
+
+        <p>
+            MAD es una empresa farmacéutica comprometida con
+            facilitar el acceso a productos para el cuidado
+            de la salud y el bienestar de nuestros clientes.
+
+            Nuestra misión es ofrecer una experiencia de compra
+            sencilla, segura y accesible, permitiendo que las
+            personas consulten nuestros productos y realicen
+            sus pedidos desde cualquier lugar.
+        </p>
+    </section>
+
+    <!-- CARRITO -->
+    <section id="carrito" class="seccion">
+        <h2>Carrito de compras</h2>
+
+        <div class="carrito">
+            <div id="lista-carrito">
+                <p>Tu carrito está vacío.</p>
+            </div>
+
+            <h3 id="total">Total: RD$ 0.00</h3>
+
+            <button id="vaciar-carrito" class="boton-secundario">
+                Vaciar carrito
+            </button>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE PEDIDOS -->
+    <section class="seccion" id="pedido">
+        <h2>Realizar pedido</h2>
+
+        <form id="formulario-pedido">
+
+            <label for="nombre">Nombre completo:</label>
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Ingrese su nombre"
+                required
+            >
+
+            <label for="telefono">Teléfono:</label>
+            <input
+                type="tel"
+                id="telefono"
+                placeholder="Ingrese su teléfono"
+                required
+            >
+
+            <label for="direccion">Dirección de entrega:</label>
+            <input
+                type="text"
+                id="direccion"
+                placeholder="Ingrese su dirección"
+                required
+            >
+
+            <label for="comentario">Comentario del pedido:</label>
+            <textarea
+                id="comentario"
+                placeholder="Detalles adicionales del pedido"
+            ></textarea>
+
+            <button type="submit" class="boton">
+                Confirmar pedido
+            </button>
+
+        </form>
+
+        <div id="mensaje-pedido"></div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+
+        <p>Estamos para servirte.</p>
+        <p>Correo: contacto@madfarmacia.com</p>
+        <p>Teléfono: 849-405-8120</p>
+        <p>República Dominicana</p>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <p>
+            © 2026 MAD - Medicamentos al alcance de tus manos.
+        </p>
+
+        <p>Tu salud y bienestar son nuestra prioridad.</p>
+    </footer>
+
+    <script src="c:\Users\Randy\OneDrive\Desktop\madjava.js"></script>
+
+</body>
+</html>

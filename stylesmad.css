@@ -1,0 +1,352 @@
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f8f6;
+    color: #263238;
+}
+
+.logo img {
+    width: 160px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
+/* ENCABEZADO */
+
+header {
+    background: #087f5b;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo span {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo small {
+    font-size: 11px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b8f5d9;
+}
+
+/* INICIO */
+
+.inicio {
+    min-height: 400px;
+    background: linear-gradient(120deg, #087f5b, #26a879);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+.inicio h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.inicio h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    background: #087f5b;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inicio .boton {
+    background: white;
+    color: #087f5b;
+}
+
+.boton:hover {
+    background: #056344;
+    color: white;
+}
+
+.inicio .boton:hover {
+    background: #e0f5e9;
+    color: #087f5b;
+}
+
+.boton-secundario {
+    background: #d9534f;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* SECCIONES */
+
+.seccion {
+    padding: 55px 7%;
+}
+
+.seccion h2,
+.nosotros h2,
+.contacto h2 {
+    text-align: center;
+    color: #087f5b;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* BUSCADOR */
+
+#buscador {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto 35px;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    outline-color: #087f5b;
+}
+
+/* PRODUCTOS */
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 25px;
+}
+
+.producto {
+    background: white;
+    padding: 25px 18px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 12px #00000012;
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 18px #00000020;
+}
+
+.producto .imagen {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    color: #263238;
+    margin-bottom: 12px;
+}
+
+.producto p {
+    color: #087f5b;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+/* NOSOTROS */
+
+.nosotros {
+    background: #e3f5ec;
+    text-align: center;
+}
+
+.nosotros p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* CARRITO */
+
+.carrito {
+    max-width: 850px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.item-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.controles button {
+    padding: 6px 11px;
+    margin: 3px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #087f5b;
+    color: white;
+}
+
+.controles .eliminar {
+    background: #d9534f;
+}
+
+#total {
+    text-align: right;
+    color: #087f5b;
+    margin: 25px 0;
+}
+
+/* FORMULARIO */
+
+#formulario-pedido {
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+#formulario-pedido label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#formulario-pedido input,
+#formulario-pedido textarea {
+    width: 100%;
+    padding: 13px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#formulario-pedido textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#formulario-pedido button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#mensaje-pedido {
+    text-align: center;
+    color: #087f5b;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* CONTACTO */
+
+.contacto {
+    background: #e3f5ec;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.contacto p {
+    margin: 12px;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background: #075c43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 700px) {
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .inicio h1 {
+        font-size: 32px;
+    }
+
+    .inicio h2 {
+        font-size: 21px;
+    }
+
+    .item-carrito {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .seccion {
+        padding: 40px 5%;
+    }
+}
